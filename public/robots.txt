@@ -1,1 +1,6 @@
-'User-agent: *\nAllow: /' 
+User-agent: *
+Allow: /
+Disallow: /portals/
+Disallow: /broker/
+Disallow: /api/
+Sitemap: https://bacninhhonghaccity.vn/sitemap.xml
