@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { nanoid } from 'nanoid'
+import { writeLead } from '@/lib/leads/write'
 import type { ApiErrorCode } from '@/types/api'
 
 // Lead source enum — 05 §4.4
@@ -101,26 +102,57 @@ export async function POST(req: NextRequest) {
     )
   }
 
-  // Sprint P0: Turnstile verification stubbed — verify in Sprint 1A
-  // TODO Sprint 1A: Verify Cloudflare Turnstile token server-side
+  // Sprint P0: Turnstile verification stubbed — verify in Sprint 1B
   // const turnstileOk = await verifyTurnstile(data.turnstile_token, req)
   // if (!turnstileOk) return errorResponse('turnstile_failed', 'Xác thực thất bại. Vui lòng thử lại.', 403)
 
-  // Sprint P0: Firestore write stubbed — implement in Sprint 1A
-  // TODO Sprint 1A:
-  // 1. Check submission_idempotency/{client_request_id}
-  // 2. Write to Firestore leads collection
-  // 3. Compute lead score
-  // 4. Send Telegram alert if score >= 40
+  try {
+    const result = await writeLead({
+      client_request_id: data.client_request_id,
+      surface: data.surface,
+      persona: data.persona,
+      phone: data.phone,
+      email: data.email,
+      full_name: data.full_name,
+      message: data.message,
+      consent_privacy: data.consent_privacy,
+      consent_state: data.consent_state,
+      utm_source: data.utm_source,
+      utm_medium: data.utm_medium,
+      utm_campaign: data.utm_campaign,
+      referrer: req.headers.get('referer') ?? undefined,
+      request_id: requestId,
+    })
 
-  return NextResponse.json(
-    {
-      ok: true,
-      data: { success: true, result_code: 'created' },
-      meta: { request_id: requestId },
-    },
-    { status: 200, headers: { 'Cache-Control': 'no-store' } }
-  )
+    if (result.result_code === 'processing') {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: {
+            code: 'conflict' as ApiErrorCode,
+            message: 'Yêu cầu đang được xử lý. Vui lòng thử lại sau vài giây.',
+          },
+          meta: { request_id: requestId },
+        },
+        { status: 409, headers: { 'Cache-Control': 'no-store' } }
+      )
+    }
+
+    return NextResponse.json(
+      {
+        ok: true,
+        data: { result_code: result.result_code },
+        meta: { request_id: requestId },
+      },
+      { status: result.result_code === 'created' ? 201 : 200, headers: { 'Cache-Control': 'no-store' } }
+    )
+  } catch (err) {
+    console.error('[api/leads] write error', {
+      request_id: requestId,
+      error: err instanceof Error ? err.message : 'unknown',
+    })
+    return errorResponse('server_error', 'Đã xảy ra lỗi. Vui lòng thử lại sau.', 500)
+  }
 }
 
 export async function GET() {
