@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/05-database-schema.md#§3.3",
+    "eeat_policy_ref": "docs/spec/00-master-instruction.md#§9",
+    "is_demo": true,
+    "to_replace_in_production": "Real author profile sau khi Ngô Kim Quyên ký bio + upload ảnh"
+  },
+  "authors": [
+    {
+      "author_id": "ngo-kim-quyen",
+      "name": "Ngô Kim Quyên",
+      "slug": "ngo-kim-quyen",
+      "role": "Sales Manager / Trưởng nhóm tư vấn",
+      "specialty": [
+        "Thị trường Bắc Ninh / Đông Hà Nội",
+        "Pháp lý BĐS / due diligence",
+        "Tư vấn đầu tư dài hạn / ROI",
+        "Tư vấn mua để ở cho gia đình"
+      ],
+      "years_experience": "21 năm (vào nghề từ 2005)",
+      "credentials": [
+        "Chứng chỉ hành nghề môi giới BĐS — Số 151719, Sở Xây dựng TP.HCM",
+        "Phòng Kinh doanh — Công ty TNHH Phát triển Phú Mỹ Hưng"
+      ],
+      "linkedin_url": "https://www.linkedin.com/in/ngo-kim-quyen",
+      "photo_media_id": "ngokimquyen-portrait",
+      "photo_approval_status": "approvedForPublic",
+      "photo_uploaded_at": "2026-05-19",
+      "bio_short": "Sales Manager · 21 năm BĐS · chuyên Bắc Ninh & Đông Hà Nội. Tư vấn pháp lý, đầu tư phase-based, và lựa chọn nhà cho gia đình. Không FOMO, không cam kết sinh lời.",
+      "bio_long_ref": "docs/people/ngo-kim-quyen.md §2-§5",
+      "track_record": {
+        "an_cu_clients_count": 300,
+        "dau_tu_clients_count": 150,
+        "active_market": "Bắc Ninh + Đông Hà Nội"
+      },
+      "published_works": [
+        "OPTIONAL: link bài viết / báo chí Quyên đã xuất hiện (chưa fill)"
+      ],
+      "contact": {
+        "phone": "0945375688",
+        "phone_display": "0945 375 688",
+        "email": "kimquyen@pmh.com.vn",
+        "zalo": "[env: NEXT_PUBLIC_ZALO_OA_URL]"
+      },
+      "profile_route": "/tu-van/ngo-kim-quyen",
+      "schema_person_ref": "docs/people/ngo-kim-quyen.md §8",
+      "fact_ledger_sources": [
+        "tier1-honghac-pmh-nomura-jv",
+        "tier1-nomura-vn-hong-hac"
+      ],
+      "is_active": true,
+      "is_demo": true
+    }
+  ]
+}

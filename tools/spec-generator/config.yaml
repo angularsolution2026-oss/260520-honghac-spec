@@ -1,0 +1,189 @@
+version: "1.0"
+project: "Hồng Hạc City"
+output_base: "260519"
+generator_version: "1.0"
+
+sources:
+  spec:
+    - docs/spec/00-master-instruction.md
+    - docs/spec/01-project-overview.md
+    - docs/spec/02-tech-stack.md
+    - docs/spec/03-user-roles-permissions.md
+    - docs/spec/04-features-priority.md
+    - docs/spec/05-database-schema.md
+    - docs/spec/06-app-router-structure.md
+    - docs/spec/07-ui-ux-design-system.md
+    - docs/spec/08-lead-capture-cro.md
+    - docs/spec/09-seo-strategy.md
+    - docs/spec/10-admin-dashboard.md
+    - docs/spec/11-performance.md
+    - docs/spec/12-analytics-tracking.md
+    - docs/spec/13-privacy-legal.md
+    - docs/spec/14-schema-markup.md
+    - docs/spec/15-content-governance.md
+    - docs/spec/16-scoring-quality-gate.md
+    - docs/spec/17-launch-data-readiness.md
+    - docs/spec/website-structure.md
+
+  governance:
+    - .ai/core/rules.md
+    - .ai/core/quality-gates.md
+    - .ai/core/done-criteria.md
+    - .ai/core/delivery-gate.md
+    - .ai/governance/ARCHITECTURE_IMMUTABLES.md
+    - .ai/governance/FILE_OWNERSHIP_MAP.md
+    - .ai/governance/AGENT_HANDOFF_PROTOCOL.md
+    - .ai/governance/ROLLBACK_POLICY.md
+
+  state:
+    - .ai/planning/DECISION_LOG.md
+    - .ai/planning/GAP_REGISTER.md
+
+# Consolidated output targets
+targets:
+  - name: "00_MASTER_SPEC.md"
+    sections:
+      - source: "docs/spec/00-master-instruction.md"
+        include: "§1,§2,§3,§4,§6"
+        exclude: "§5,§13"
+    coverage_target: 95
+
+  - name: "01_PRODUCT_LAW.md"
+    sections:
+      - source: "docs/spec/00-master-instruction.md"
+        include: "§5"
+      - source: "docs/spec/01-project-overview.md"
+        include: "*"
+      - source: "docs/spec/09-seo-strategy.md"
+        include: "*"
+      - source: "docs/spec/13-privacy-legal.md"
+        include: "*"
+      - source: "docs/spec/14-schema-markup.md"
+        include: "*"
+      - source: "docs/spec/15-content-governance.md"
+        include: "*"
+      - source: "docs/spec/website-structure.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "02_TECH_STACK.md"
+    sections:
+      - source: "docs/spec/02-tech-stack.md"
+        include: "*"
+      - source: "docs/spec/07-ui-ux-design-system.md"
+        include: "§5"
+      - source: "docs/spec/11-performance.md"
+        include: "*"
+      - source: "docs/spec/12-analytics-tracking.md"
+        include: "*"
+      - source: "docs/spec/16-scoring-quality-gate.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "03_DATA_CONTRACT.md"
+    sections:
+      - source: "docs/spec/05-database-schema.md"
+        include: "*"
+      - source: "docs/spec/10-admin-dashboard.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "04_ROUTES_API.md"
+    sections:
+      - source: "docs/spec/06-app-router-structure.md"
+        include: "*"
+      - source: "docs/spec/08-lead-capture-cro.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "05_SECURITY_PRIVACY_RBAC.md"
+    sections:
+      - source: "docs/spec/02-tech-stack.md"
+        include: "§7"
+      - source: "docs/spec/03-user-roles-permissions.md"
+        include: "*"
+      - source: "docs/spec/13-privacy-legal.md"
+        include: "*"
+    coverage_target: 98
+
+  - name: "06_UI_UX_CRO.md"
+    sections:
+      - source: "docs/spec/07-ui-ux-design-system.md"
+        include: "*"
+      - source: "docs/spec/08-lead-capture-cro.md"
+        include: "§1,§2,§3,§4"
+    coverage_target: 98
+
+  - name: "07_SEO_SCHEMA_CONTENT.md"
+    sections:
+      - source: "docs/spec/09-seo-strategy.md"
+        include: "*"
+      - source: "docs/spec/14-schema-markup.md"
+        include: "*"
+      - source: "docs/spec/15-content-governance.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "08_GOVERNANCE_AI_CODING.md"
+    sections:
+      - source: ".ai/core/rules.md"
+        include: "*"
+      - source: ".ai/governance/ARCHITECTURE_IMMUTABLES.md"
+        include: "*"
+      - source: ".ai/governance/FILE_OWNERSHIP_MAP.md"
+        include: "*"
+      - source: ".ai/governance/AGENT_HANDOFF_PROTOCOL.md"
+        include: "*"
+      - source: ".ai/governance/ROLLBACK_POLICY.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "09_ACCEPTANCE_QUALITY_GATES.md"
+    sections:
+      - source: ".ai/core/quality-gates.md"
+        include: "*"
+      - source: ".ai/core/done-criteria.md"
+        include: "*"
+      - source: ".ai/core/delivery-gate.md"
+        include: "*"
+    coverage_target: 99
+
+  - name: "10_GLOSSARY.md"
+    sections:
+      - source: "docs/spec/00-master-instruction.md"
+        include: "§3"
+    coverage_target: 100
+
+  - name: "11_DECISION_REGISTER.md"
+    sections:
+      - source: ".ai/planning/DECISION_LOG.md"
+        include: "*"
+    coverage_target: 100
+
+  - name: "12_GAP_REGISTER.md"
+    sections:
+      - source: ".ai/planning/GAP_REGISTER.md"
+        include: "*"
+    coverage_target: 100
+
+quality_gates:
+  - name: "schema_check"
+    description: "Verify frontmatter structure"
+    fail_on_error: true
+  - name: "coverage_check"
+    description: "Verify content coverage targets"
+    fail_on_error: false
+  - name: "cross_reference_check"
+    description: "Verify internal links resolve"
+    fail_on_error: true
+
+safety:
+  overwrite_protection: true
+  checksum_verification: true
+  max_deduplication_loss: 0.05
+  clock_tolerance_seconds: 30
+
+logging:
+  log_folder: "260519/logs"
+  evidence_folder: ".ai/evidence/spec-consolidation"
+  verbose: true

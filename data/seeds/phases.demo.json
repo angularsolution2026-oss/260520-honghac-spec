@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/05-database-schema.md#§3.2",
+    "fact_source": "docs/data/HONG-HAC-FACTS.md §6.1",
+    "is_demo": true,
+    "tier": "tier_1_official_verified",
+    "tier_source_ids": ["tier1-honghac-hongphat"],
+    "to_replace_in_production": "Phase phase_id + release_date + completion_date verified với CĐT"
+  },
+  "phases": [
+    {
+      "phase_id": "01HZK0PHASE0001HP-F1",
+      "phase_name": "Hồng Phát — Tiểu khu F1",
+      "phan_khu": "hong_phat",
+      "release_date": "2025-09-01",
+      "completion_date": null,
+      "status": "current",
+      "note": "Tiểu khu F1 đang mở bán — Tier 1 verified"
+    },
+    {
+      "phase_id": "01HZK0PHASE0002HP-F2",
+      "phase_name": "Hồng Phát — Tiểu khu F2",
+      "phan_khu": "hong_phat",
+      "release_date": null,
+      "completion_date": null,
+      "status": "upcoming",
+      "note": "F2 thuộc Hồng Phát, chưa công bố lịch mở bán Tier 1"
+    },
+    {
+      "phase_id": "01HZK0PHASE0003HP-F3",
+      "phase_name": "Hồng Phát — Tiểu khu F3",
+      "phan_khu": "hong_phat",
+      "release_date": null,
+      "completion_date": null,
+      "status": "upcoming",
+      "note": "F3 thuộc Hồng Phát, chưa công bố lịch mở bán Tier 1"
+    },
+    {
+      "phase_id": "01HZK0PHASE0010HONGTHINH",
+      "phase_name": "Hồng Thịnh — Tiếp mạch phồn vinh",
+      "phan_khu": "hong_thinh",
+      "release_date": null,
+      "completion_date": null,
+      "status": "upcoming",
+      "note": "Phân khu chưa công bố Tier 1 — DEFERRED per 17 §8"
+    },
+    {
+      "phase_id": "01HZK0PHASE0020HONGPHUC",
+      "phase_name": "Hồng Phúc — Vững bền hạnh phúc",
+      "phan_khu": "hong_phuc",
+      "release_date": null,
+      "completion_date": null,
+      "status": "upcoming",
+      "note": "Phân khu chưa công bố Tier 1 — DEFERRED per 17 §8"
+    }
+  ]
+}

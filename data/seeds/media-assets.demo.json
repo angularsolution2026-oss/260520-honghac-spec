@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "approval_policy_ref": "docs/spec/15-content-governance.md#§3",
+    "is_demo": true,
+    "to_replace_in_production": "Real media với approvalStatus = approvedForPublic"
+  },
+  "media": [
+    {
+      "media_id": "hero-homepage",
+      "type": "image",
+      "url": "/placeholders/hero-homepage.jpg",
+      "alt": "Phối cảnh tổng thể Hồng Hạc City",
+      "caption": "Ảnh minh họa quy hoạch",
+      "approvalStatus": "approvedForPublic",
+      "tier": "tier_1_official_verified",
+      "source": "honghacphumyhung.vn",
+      "width": 1920,
+      "height": 1080,
+      "is_demo": true,
+      "fallback": "AbstractPlaceholder:urban:16/9"
+    },
+    {
+      "media_id": "ngokimquyen-portrait",
+      "type": "image",
+      "url": "/people/ngo-kim-quyen.jpg",
+      "alt": "Chân dung Ngô Kim Quyên — Sales Manager",
+      "approvalStatus": "approvedForPublic",
+      "uploaded_at": "2026-05-19",
+      "is_demo": false,
+      "fallback": "AbstractPlaceholder:lifestyle:1/1"
+    },
+    {
+      "media_id": "lifestyle-family",
+      "type": "image",
+      "url": "/placeholders/lifestyle-family.jpg",
+      "alt": "Gia đình tại không gian sống",
+      "approvalStatus": "pending_approval",
+      "is_demo": true,
+      "fallback": "AbstractPlaceholder:lifestyle:4/3"
+    },
+    {
+      "media_id": "lifestyle-green",
+      "type": "image",
+      "url": "/placeholders/lifestyle-green.jpg",
+      "alt": "Không gian xanh đô thị",
+      "approvalStatus": "pending_approval",
+      "is_demo": true,
+      "fallback": "AbstractPlaceholder:urban:4/3"
+    },
+    {
+      "media_id": "masterplan-197ha",
+      "type": "image",
+      "url": "/placeholders/masterplan.jpg",
+      "alt": "Bản đồ quy hoạch Hồng Hạc City 197 ha",
+      "caption": "Ảnh minh họa quy hoạch — nguồn: honghacphumyhung.vn",
+      "approvalStatus": "approvedForPublic",
+      "tier": "tier_1_official_verified",
+      "is_demo": true,
+      "fallback": "AbstractPlaceholder:urban:16/9"
+    },
+    {
+      "media_id": "og-default",
+      "type": "image",
+      "url": "/og/og-default.jpg",
+      "alt": "Hồng Hạc City Bắc Ninh",
+      "approvalStatus": "approvedForPublic",
+      "width": 1200,
+      "height": 630,
+      "is_demo": true
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "tier": "tier_2_internal_reference",
+    "policy_ref": "docs/spec/00-master-instruction.md#§4.1",
+    "PUBLIC_RULE": "Tier 2 — KHÔNG render lên public route. Chỉ dùng cho admin/sales logic ẩn, calculator hidden mode, hoặc nội dung sales gửi 1-1 cho khách qua Zalo/email.",
+    "source": "CS BÁN HÀNG_HỒNG HẠC ZONE F1-1_GĐ 3 (21.10.25-31.12.25).pdf",
+    "source_path": "data/260504-thamchieu.md",
+    "fact_period": "2025-10-21 to 2025-12-31",
+    "is_demo": true,
+    "is_active_policy": false,
+    "supersedes_after": "Update khi CĐT ra CSBH mới"
+  },
+  "internal_legal_entity": {
+    "_doc": "Pháp nhân ký HĐMB với khách hàng — KHÔNG public, vì brand developer là PMH × Nomura",
+    "name": "Công ty Cổ phần Đầu tư Công đoàn Ngân hàng Công Thương",
+    "role": "Pháp nhân ký HĐMB cho phân khu Hồng Phát Zone F1-1",
+    "relationship_to_brand": "Operator pháp lý — brand developer là PMH × Nomura (cross-verified Tier 1)",
+    "do_not_public": true
+  },
+  "policy_meta": {
+    "phase_label": "Hồng Phát Zone F1-1 — GĐ 3",
+    "policy_period_start": "2025-10-21",
+    "policy_period_end": "2025-12-31",
+    "based_on_policies": [
+      "CSBH dự án Hồng Hạc City ngày 29/05/2025",
+      "Điều chỉnh ngày 23/06/2025",
+      "Điều chỉnh ngày 01/09/2025"
+    ]
+  },
+  "total_price_definition": {
+    "_doc": "Tier 2 — chỉ dùng trong calculator nội bộ",
+    "components": [
+      "Giá bán (đã bao gồm giá trị quyền sử dụng đất)",
+      "Thuế GTGT (không tính trên tiền sử dụng đất)",
+      "Kinh phí bảo trì phần sở hữu chung"
+    ]
+  },
+  "support_programs": [
+    {
+      "id": "free_mgmt_fee_30_months",
+      "name": "Tặng Phí quản lý 30 tháng",
+      "period": "2027-06-10 to 2029-12-09",
+      "condition": "Thanh toán đúng hạn + nhận nhà đúng hạn HĐMB (10/06/2027)",
+      "non_cash_redeemable": true
+    },
+    {
+      "id": "loan_support_rate",
+      "name": "Vay hỗ trợ lãi suất",
+      "applicable_to": "K.H vay ngân hàng được CĐT chỉ định",
+      "stage_1": {
+        "period": "Ký HĐMB → 10/06/2027",
+        "rate_support": "0%",
+        "grace_principal": true
+      },
+      "stage_2": {
+        "period": "11/06/2027 → 10/06/2028",
+        "rate_support_pct": 3,
+        "duration_months": 12,
+        "max_loan_pct_of_hdmb": 70,
+        "excludes": ["Kinh phí bảo trì"]
+      }
+    },
+    {
+      "id": "no_loan_discount",
+      "name": "Chiết khấu không vay",
+      "applicable_to": "K.H mua trực tiếp từ CĐT, không vay, không chuyển nhượng",
+      "format": "Khấu trừ trực tiếp vào giá tại nhận nhà",
+      "percent": "Theo phê duyệt Công ty"
+    },
+    {
+      "id": "loyalty_villa_donlap",
+      "name": "Tri ân khách hàng — Biệt thự đơn lập",
+      "discount_max_pct": 3,
+      "discount_base": "Giá (không bao gồm tiền SDĐ, GTGT, KPBT)",
+      "booking_period": "2025-10-21 to 2025-12-31",
+      "condition": "Ký HĐMB trong 30 ngày kể từ đặt cọc"
+    },
+    {
+      "id": "loyalty_other_products",
+      "name": "Tri ân khách hàng — BT song lập / shophouse / townhouse (chọn 1 trong 3)",
+      "applicable_to_products": ["biet_thu_song_lap", "shophouse", "nha_pho_townhouse"],
+      "options": [
+        {
+          "id": "pmhg_existing_owner",
+          "discount_pct": 1,
+          "target": "K.H hoặc gia đình ruột thịt đang sở hữu sản phẩm Phú Mỹ Hưng Group"
+        },
+        {
+          "id": "bac_ninh_resident",
+          "discount_pct": 1,
+          "target": "Hộ khẩu/nguyên quán Bắc Ninh hoặc DN trụ sở Bắc Ninh"
+        },
+        {
+          "id": "honghac_existing_owner",
+          "discount_pct": 1,
+          "target": "K.H/người thân đang sở hữu sản phẩm Hồng Hạc City, sản phẩm thứ 2+"
+        }
+      ]
+    },
+    {
+      "id": "new_loyalty_discount",
+      "name": "Tri ân chiết khấu mới (không áp dụng BT đơn lập)",
+      "tiers": [
+        { "id": "limited_list", "discount_pct": 2, "scope": "Phụ lục 1 — Danh sách đặc biệt giới hạn" },
+        { "id": "remaining", "discount_pct": 1, "scope": "Sản phẩm còn lại" }
+      ],
+      "stackable_with": "loyalty_other_products",
+      "max_combined_pct": 3,
+      "booking_period": "2025-10-21 to 2025-12-31"
+    },
+    {
+      "id": "early_move_in_voucher",
+      "name": "Voucher trang trí nội thất",
+      "value_pct_of_total_price": 3,
+      "condition": "Thanh toán + nhận nhà đúng hạn + hoàn thiện nội thất không trễ 10/12/2027",
+      "format": "CĐT thanh toán trực tiếp cho đơn vị thi công (3 bên)"
+    }
+  ],
+  "key_dates_internal": {
+    "handover_target": "2027-06-10",
+    "interior_completion_deadline": "2027-12-10",
+    "free_mgmt_fee_window": ["2027-06-10", "2029-12-09"]
+  },
+  "public_safe_messaging": [
+    "Tiến độ bàn giao dự kiến: 06/2027 (Tier 1 — khi CĐT chính thức xác nhận public)",
+    "Có chương trình hỗ trợ lãi suất vay từ CĐT — chi tiết liên hệ chuyên viên",
+    "Có chương trình tri ân khách hàng — chi tiết liên hệ chuyên viên",
+    "CHÚ Ý: Không bao giờ render số % chiết khấu / lãi suất / voucher cụ thể lên public — chỉ qua kênh tư vấn 1-1"
+  ],
+  "forbidden_public_phrases": [
+    "Chiết khấu 1%/2%/3%",
+    "Lãi suất 0%",
+    "Tặng voucher 3%",
+    "Giá gốc CĐT",
+    "Ưu đãi sốc"
+  ]
+}

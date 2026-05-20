@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/03-user-roles-permissions.md",
+    "is_demo": true,
+    "WARNING": "DEMO ONLY — KHÔNG dùng credentials này cho staging/production. Production phải provision real Firebase Auth users với 2FA cho super_admin.",
+    "to_replace_in_production": "Real Firebase Auth users, super_admin có TOTP"
+  },
+  "users": [
+    {
+      "uid": "demo-super-admin",
+      "email": "super.admin@local.demo",
+      "display_name": "Demo Super Admin",
+      "role": "super_admin",
+      "2fa_enabled_demo": false,
+      "is_demo": true,
+      "note": "Production sẽ require TOTP per 03 §3"
+    },
+    {
+      "uid": "demo-admin-content",
+      "email": "admin.content@local.demo",
+      "display_name": "Demo Admin Content",
+      "role": "admin_content",
+      "is_demo": true
+    },
+    {
+      "uid": "demo-sales-quyen",
+      "email": "quyen.sales@local.demo",
+      "display_name": "Ngô Kim Quyên",
+      "role": "sales_agent",
+      "presence_status": "active",
+      "is_demo": true
+    },
+    {
+      "uid": "demo-sales-02",
+      "email": "sales02@local.demo",
+      "display_name": "Demo Sales 02",
+      "role": "sales_agent",
+      "presence_status": "idle",
+      "is_demo": true
+    }
+  ]
+}

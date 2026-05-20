@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/05-database-schema.md#§2.5",
+    "calculator_ref": "docs/spec/04-features-priority.md#§4.1",
+    "is_demo": true,
+    "fallback_band_ref": "docs/spec/17-launch-data-readiness.md#§5",
+    "to_replace_in_production": "Live bank_rates Firestore với review_status = current, weekly review"
+  },
+  "bank_rates": [
+    {
+      "rate_id": "01HZK0RATE001",
+      "rate_type": "short_term",
+      "rate_min": 5.5,
+      "rate_max": 7.5,
+      "source": "Vietcombank — gói ưu đãi 12 tháng đầu",
+      "effective_date": "2026-05-01",
+      "review_status": "current",
+      "reviewed_by_uid": "demo-admin",
+      "expires_at": "2026-08-01",
+      "is_demo": true
+    },
+    {
+      "rate_id": "01HZK0RATE002",
+      "rate_type": "mid_term",
+      "rate_min": 8.5,
+      "rate_max": 10.5,
+      "source": "BIDV — lãi suất thả nổi sau ưu đãi",
+      "effective_date": "2026-05-01",
+      "review_status": "current",
+      "reviewed_by_uid": "demo-admin",
+      "expires_at": "2026-08-01",
+      "is_demo": true
+    },
+    {
+      "rate_id": "01HZK0RATE003",
+      "rate_type": "long_term",
+      "rate_min": 10.0,
+      "rate_max": 12.5,
+      "source": "Trung bình thị trường — tham khảo NHNN",
+      "effective_date": "2026-05-01",
+      "review_status": "current",
+      "reviewed_by_uid": "demo-admin",
+      "expires_at": "2026-08-01",
+      "is_demo": true
+    }
+  ],
+  "fallback_band": {
+    "_doc": "Dùng khi tất cả bank_rates expired hoặc không có data. Theo 17 §5.",
+    "rate_min": 7.0,
+    "rate_max": 12.0,
+    "disclaimer": "Lãi suất tham khảo đang được cập nhật"
+  }
+}

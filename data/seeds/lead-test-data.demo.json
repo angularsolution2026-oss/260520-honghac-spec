@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/05-database-schema.md#§2.1",
+    "is_demo": true,
+    "WARNING": "Test leads only — KHÔNG dùng real customer PII. KHÔNG sync vào production Firestore.",
+    "purpose": "Test admin Kanban, scoring, routing, SLA, Telegram alert dry-run"
+  },
+  "leads": [
+    {
+      "lead_id": "01HZK0LEAD0001",
+      "full_name": "Demo Hot Lead",
+      "phone": "0900000001",
+      "email": "hot.demo@local.test",
+      "phone_hash": "demo01a8",
+      "persona": "mua_de_o",
+      "budget_range": "2_5ty",
+      "message": "Quan tâm phân khu Hồng Phát, gia đình 2 con",
+      "lead_source": "homepage_hero",
+      "lead_status": "new",
+      "lead_score": 85,
+      "score_breakdown": {
+        "events": [
+          { "type": "sa_ban_view", "points": 10, "ts": "2026-05-18T10:00:00Z" },
+          { "type": "calculator_used_mortgage", "points": 20, "ts": "2026-05-18T10:05:00Z" },
+          { "type": "phap_ly_view", "points": 15, "ts": "2026-05-18T10:08:00Z" },
+          { "type": "consultation_booked", "points": 40, "ts": "2026-05-18T10:10:00Z" }
+        ],
+        "manual_override": null,
+        "total": 85
+      },
+      "consent_privacy": true,
+      "consent_state": { "analytics": true, "marketing": true },
+      "routing_status": "assigned",
+      "routed_to_uid": "demo-sales-quyen",
+      "created_at": "2026-05-18T10:10:00Z",
+      "is_deleted": false,
+      "is_demo": true
+    },
+    {
+      "lead_id": "01HZK0LEAD0002",
+      "full_name": "Demo Warm Lead",
+      "phone": "0900000002",
+      "email": null,
+      "phone_hash": "demo02b7",
+      "persona": "dau_tu",
+      "budget_range": "5_10ty",
+      "lead_source": "vay_mua",
+      "lead_status": "new",
+      "lead_score": 55,
+      "score_breakdown": {
+        "events": [
+          { "type": "sa_ban_view", "points": 10, "ts": "2026-05-18T11:00:00Z" },
+          { "type": "calculator_used_mortgage", "points": 20, "ts": "2026-05-18T11:03:00Z" },
+          { "type": "bang_gia_view", "points": 15, "ts": "2026-05-18T11:08:00Z" },
+          { "type": "tiem_nang_view", "points": 10, "ts": "2026-05-18T11:12:00Z" }
+        ],
+        "total": 55
+      },
+      "consent_privacy": true,
+      "consent_state": { "analytics": true, "marketing": false },
+      "routing_status": "unassigned",
+      "created_at": "2026-05-18T11:12:00Z",
+      "is_deleted": false,
+      "is_demo": true
+    },
+    {
+      "lead_id": "01HZK0LEAD0003",
+      "phone": "0900000003",
+      "phone_hash": "demo03c6",
+      "persona": "chua_xac_dinh",
+      "budget_range": "chua_xac_dinh",
+      "lead_source": "popup_fallback",
+      "lead_status": "new",
+      "lead_score": 15,
+      "score_breakdown": {
+        "events": [
+          { "type": "sa_ban_view", "points": 10, "ts": "2026-05-18T12:00:00Z" }
+        ],
+        "total": 15
+      },
+      "consent_privacy": true,
+      "consent_state": { "analytics": false, "marketing": false },
+      "routing_status": "unassigned",
+      "created_at": "2026-05-18T12:00:00Z",
+      "is_deleted": false,
+      "is_demo": true,
+      "note": "Junk threshold < 20 — không alert, không route"
+    }
+  ]
+}

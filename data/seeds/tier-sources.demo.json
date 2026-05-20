@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "fact_ledger_ref": "docs/spec/15-content-governance.md#§1.2",
+    "tier_policy_ref": "docs/spec/00-master-instruction.md#§4",
+    "facts_ssot": "docs/data/HONG-HAC-FACTS.md",
+    "is_demo": true,
+    "version": "v2",
+    "last_crawl": "2026-05-19",
+    "changelog_v2": "Add 8 Tier 1 PDF docs from phumyhung.vn/congboduanhonghaccity/, TT 05/2024/TT-BXD, NQ 1658/NQ-UBTVQH15. Reclassify PMH × Nomura as cổ đông (not CĐT)."
+  },
+  "sources": [
+    {
+      "source_id": "tier1-honghac-official",
+      "url": "https://honghacphumyhung.vn/",
+      "name": "Website chính thức CĐT Hồng Hạc City",
+      "tier": "tier_1_official_verified",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Dự án: Hồng Hạc City – Phú Mỹ Hưng tại Phường Song Liễu, Bắc Ninh",
+        "Quy mô 197,76 ha — 27.700 dân — mật độ XD 27,9% — cây xanh 19,6%",
+        "3 phân khu: Hồng Phát · Hồng Thịnh · Hồng Phúc",
+        "Nguyên tắc phát triển 7S",
+        "Cách Vành đai 4: 2 km · Hà Nội: 23 km · Bắc Ninh: 20 km · Nội Bài: 40 km · Gia Bình (tương lai): 16 km",
+        "Hotline TP.HCM (028) 3874 8888 · Hà Nội (024) 3936 2640 · Bắc Ninh (0222) 3616 888"
+      ]
+    },
+    {
+      "source_id": "tier1-honghac-hongphat",
+      "url": "https://honghacphumyhung.vn/hongphat/",
+      "name": "Trang phân khu Hồng Phát của CĐT",
+      "tier": "tier_1_official_verified",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Hồng Phát: 3 tiểu khu (F1, F2, F3), tiểu khu F1 đang mở bán",
+        "Tổng phân khu Hồng Phát 1.074 căn — mật độ XD 51,9% — sở hữu lâu dài",
+        "F1 đợt 1: 323 căn được phép mở bán từ 14/06/2025 (TT 05/2024/TT-BXD)",
+        "Cơ cấu 323 căn F1: 17 BT đơn lập + 42 BT song lập + 170 shophouse + 94 townhouse",
+        "Tiến độ cập nhật tháng 04/2026 — đang xây dựng hạ tầng"
+      ]
+    },
+    {
+      "source_id": "tier1-pmh-corporate",
+      "url": "https://phumyhung.vn/",
+      "name": "Phú Mỹ Hưng corporate",
+      "tier": "tier_1_official_verified",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Tên pháp nhân: Công ty TNHH Phát triển Phú Mỹ Hưng",
+        "30+ năm hoạt động — Top 10 BCI Asia 2019",
+        "Hồng Hạc City là 1 trong các dự án danh mục PMH",
+        "Giấy phép ICP: Số 37/GP-TTDT (16/05/2018)",
+        "PMH nắm 51% cổ phần pháp nhân CĐT Hồng Hạc (CTCP ĐT Công đoàn NHCT) từ 2016"
+      ]
+    },
+    {
+      "source_id": "tier1-honghac-pmh-nomura-jv",
+      "url": "https://honghacphumyhung.vn/phu-my-hung-va-nomura-cung-dau-tu-hong-hac-city/",
+      "name": "Công bố hợp tác chiến lược PMH × Nomura — 3/10/2025",
+      "tier": "tier_1_official_verified",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "PMH × Nomura RE Asia chính thức đồng đầu tư Hồng Hạc City từ 3/10/2025",
+        "Cơ cấu sở hữu pháp nhân CĐT: PMH 51% / Nomura 49%",
+        "PMH × Nomura đã hợp tác trước đó tại The Midtown TPHCM (2015)"
+      ]
+    },
+    {
+      "source_id": "tier1-nomura-vn-hong-hac",
+      "url": "https://nomura-re-vn.com/du-an/hong-hac-city/",
+      "name": "Nomura Real Estate Vietnam — trang dự án Hồng Hạc City",
+      "tier": "tier_1_official_verified",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "Cross-verify đồng đầu tư PMH × Nomura từ phía Nomura"
+    },
+    {
+      "source_id": "tier1-doc-457-2017",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/3.%20457-Q%C4%90-UBND.pdf",
+      "name": "QĐ 457/QĐ-UBND — Chấp thuận địa điểm QHCT + dự án HTKT KĐT sinh thái Xuân Lâm",
+      "tier": "tier_1_official_verified",
+      "issuer": "UBND tỉnh Bắc Ninh",
+      "doc_year": 2017,
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Dự án có chấp thuận địa điểm từ UBND tỉnh Bắc Ninh",
+        "Tên gốc trên hồ sơ pháp lý: Khu đô thị sinh thái Xuân Lâm"
+      ]
+    },
+    {
+      "source_id": "tier1-doc-428-2017",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/6.%20428-Q%C4%90-UBND.pdf",
+      "name": "QĐ 428/QĐ-UBND ngày 23/8/2017 — Phê duyệt mục đích SDĐ đợt 1",
+      "tier": "tier_1_official_verified",
+      "issuer": "UBND tỉnh Bắc Ninh",
+      "doc_date": "2017-08-23",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Phê duyệt mục đích sử dụng đất đợt 1",
+        "Tên dự án trên QĐ: KĐT sinh thái Hồng Hạc – Xuân Lâm, huyện Thuận Thành"
+      ]
+    },
+    {
+      "source_id": "tier1-doc-509-2019",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/13.%20509-Q%C4%90-UBND.pdf",
+      "name": "QĐ 509/QĐ-UBND — Điều chỉnh quy hoạch",
+      "tier": "tier_1_official_verified",
+      "issuer": "UBND tỉnh Bắc Ninh",
+      "doc_year": 2019,
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "Quy hoạch 1/500 đã được điều chỉnh năm 2019"
+    },
+    {
+      "source_id": "tier1-doc-34-hdtd-2019",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/10.%2034.H%C4%90-T%C4%90%20%E2%80%93%20H%C4%90%20thu%C3%AA%20%C4%91%E1%BA%A5t.pdf",
+      "name": "HĐ thuê đất 34/HĐ-TĐ ngày 15/5/2019 (gốc)",
+      "tier": "tier_1_official_verified",
+      "issuer": "Sở TNMT Bắc Ninh ↔ CTCP ĐT Công đoàn Ngân hàng Công Thương",
+      "doc_date": "2019-05-15",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "Hợp đồng thuê đất chính thức ký giữa UBND Bắc Ninh và pháp nhân CĐT (CTCP ĐT Công đoàn NHCT)"
+    },
+    {
+      "source_id": "tier1-doc-32-hdtd-2025",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/11.%2032-H%C4%90-T%C4%90%2008.04.2025.pdf",
+      "name": "HĐ thuê đất 32/HĐ-TĐ ngày 8/4/2025 — Điều chỉnh QĐ giao đất/cho thuê đất",
+      "tier": "tier_1_official_verified",
+      "issuer": "UBND tỉnh Bắc Ninh",
+      "doc_date": "2025-04-08",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "QĐ giao đất/cho thuê đất đã được điều chỉnh năm 2025 — phù hợp với sáp nhập hành chính và tăng vốn"
+    },
+    {
+      "source_id": "tier1-doc-gpxd-158-2024",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/20.%20Gi%E1%BA%A5y%20ph%C3%A9p%20XD%20HTKT%20giai%20%C4%91o%E1%BA%A1n%201.pdf",
+      "name": "Giấy phép XD HTKT giai đoạn 1 — Số 158/GPXD ngày 13/9/2024",
+      "tier": "tier_1_official_verified",
+      "issuer": "Sở Xây dựng Bắc Ninh (KT Giám đốc — PGĐ Nguyễn Văn Hoàn)",
+      "doc_date": "2024-09-13",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "Pháp nhân CĐT: CTCP Đầu tư Công đoàn Ngân hàng Công Thương, Phố Chùa Thầm, Phường Xuân Lâm, Thị xã Thuận Thành",
+        "Diện tích cấp phép HTKT giai đoạn 1: 1.985.132,8 m² (≈ 198,51 ha)",
+        "Căn cứ đất: QĐ 1503/QĐ-UBND ngày 24/11/2011 + biên bản bàn giao đợt 1 (14/10/2016), đợt 2 (19/12/2018)",
+        "Căn cứ pháp lý: QĐ 428/QĐ-UBND (23/8/2017), QĐ 181/QĐ-UBND (24/4/2019), HĐ thuê đất 34/HĐ-TĐ (15/5/2019)",
+        "Đơn vị thẩm định BCNCKT: Cục Hạ tầng kỹ thuật — Bộ Xây dựng"
+      ]
+    },
+    {
+      "source_id": "tier1-doc-tham-dinh-08-2025",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/18.%20CV.08.2025-SXD_KQ_tham_dinh.pdf",
+      "name": "CV 08/2025-SXD — Thông báo kết quả thẩm định BCNCKT dự án thành phần 2",
+      "tier": "tier_1_official_verified",
+      "issuer": "Sở Xây dựng Bắc Ninh",
+      "doc_year": 2025,
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "Báo cáo nghiên cứu khả thi dự án thành phần 2 đã được Sở XD Bắc Ninh thẩm định"
+    },
+    {
+      "source_id": "tier1-doc-mo-ban-323-2025",
+      "url": "https://phumyhung.vn/congboduanhonghaccity/25.%20Th%C3%B4ng%20b%C3%A1o%20cho%20ph%C3%A9p%20m%E1%BB%9F%20b%C3%A1n%20323%20unit.pdf",
+      "name": "Thông báo cho phép mở bán 323 căn — đợt 1 (14/06/2025)",
+      "tier": "tier_1_official_verified",
+      "issuer": "Sở Xây dựng Bắc Ninh",
+      "doc_date": "2025-06-14",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claims": [
+        "323 căn tiểu khu F1 được phép mở bán đợt 1 từ 14/06/2025",
+        "Cơ cấu: 17 BT đơn lập + 42 BT song lập + 170 shophouse + 94 townhouse",
+        "Căn cứ pháp lý: Thông tư 05/2024/TT-BXD"
+      ]
+    },
+    {
+      "source_id": "tier1-tt-05-2024-bxd",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Thong-tu-05-2024-TT-BXD-huong-dan-Luat-Nha-o",
+      "name": "Thông tư 05/2024/TT-BXD — Hướng dẫn Luật Nhà ở (kinh doanh nhà ở hình thành tương lai)",
+      "tier": "tier_1_official_verified",
+      "issuer": "Bộ Xây dựng",
+      "doc_date": "2024-07-31",
+      "effective_date": "2024-08-01",
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "supports_claim": "Điều kiện đưa nhà ở hình thành tương lai vào kinh doanh — căn cứ pháp lý cho phép mở bán 323 căn F1"
+    },
+    {
+      "source_id": "tier1-doc-1503-2011",
+      "url": "SOURCE_REQUIRED: PDF QĐ 1503/QĐ-UBND ngày 24/11/2011 chưa có URL public",
+      "name": "QĐ 1503/QĐ-UBND ngày 24/11/2011 — Thu hồi đất + giao đất cho CTCP ĐT Công đoàn NHCT",
+      "tier": "tier_1_referenced_in_other_doc",
+      "issuer": "Chủ tịch UBND tỉnh Bắc Ninh",
+      "doc_date": "2011-11-24",
+      "verification_status": "referenced_in_gpxd_158_2024",
+      "accessed_date": "2026-05-19"
+    },
+    {
+      "source_id": "tier1-doc-181-2019",
+      "url": "SOURCE_REQUIRED: PDF QĐ 181/QĐ-UBND ngày 24/4/2019 chưa có URL public",
+      "name": "QĐ 181/QĐ-UBND ngày 24/4/2019 — Phê duyệt mục đích sử dụng đất (bổ sung)",
+      "tier": "tier_1_referenced_in_other_doc",
+      "issuer": "UBND tỉnh Bắc Ninh",
+      "doc_date": "2019-04-24",
+      "verification_status": "referenced_in_gpxd_158_2024",
+      "accessed_date": "2026-05-19"
+    },
+    {
+      "source_id": "tier1-gcndt-2010",
+      "url": "INTERNAL_ONLY: GCNĐT số 21.1.2.1.000261 cấp 15/12/2010",
+      "name": "Giấy chứng nhận đầu tư số 21.1.2.1.000261 — cấp 15/12/2010",
+      "tier": "tier_1_doc_metadata_only",
+      "doc_date": "2010-12-15",
+      "verification_status": "metadata_only_no_pdf_public",
+      "accessed_date": "2026-05-19",
+      "supports_claim": "Dự án có lịch sử pháp lý từ 15/12/2010 — pháp nhân CĐT có GCNĐT cấp lần đầu"
+    },
+    {
+      "source_id": "tier3-nq-1658-2025",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-1658-NQ-UBTVQH15-2025",
+      "name": "Nghị quyết 1658/NQ-UBTVQH15 — Sáp nhập đơn vị hành chính 2025",
+      "tier": "tier_1_official_verified",
+      "issuer": "Ủy ban Thường vụ Quốc hội",
+      "doc_year": 2025,
+      "accessed_date": "2026-05-19",
+      "verified_by_uid": "ngo-kim-quyen",
+      "cross_ref_tier3_url": "https://laodong.vn/ ... (Báo Lao Động 2025-04-19)",
+      "supports_claim": "Từ 01/07/2025: Phường Song Liễu (Bắc Ninh) hình thành trên cơ sở hợp nhất Phường Xuân Lâm, Phường Hà Mãn, Xã Ngũ Thái, Xã Song Liễu (Thị xã Thuận Thành cũ)"
+    },
+    {
+      "source_id": "tier3-vnexpress-vanhdai4",
+      "url": "SOURCE_REQUIRED: URL bài VnExpress hoặc báo chính thống về Vành đai 4 Thuận Thành",
+      "name": "VnExpress — Vành đai 4 đoạn Thuận Thành",
+      "tier": "tier_3_media_verified",
+      "verification_status": "pending_url",
+      "accessed_date": "2026-05-18",
+      "verified_by_uid": "VERIFY_REQUIRED_ADMIN_UID"
+    },
+    {
+      "source_id": "tier3-bacninh-fdi",
+      "url": "SOURCE_REQUIRED: URL bài báo chính thống về FDI/Samsung Bắc Ninh",
+      "name": "Báo chí Tier 3 — FDI Bắc Ninh Samsung",
+      "tier": "tier_3_media_verified",
+      "verification_status": "pending_url",
+      "accessed_date": "2026-05-18",
+      "verified_by_uid": "VERIFY_REQUIRED_ADMIN_UID"
+    },
+    {
+      "source_id": "tier3-cafeland-hongphat-1074",
+      "url": "SOURCE_REQUIRED: URL CafeLand bài đếm 1.074 căn Hồng Phát",
+      "name": "CafeLand — Hồng Phát 1.074 căn (cross-verify số căn tổng phân khu)",
+      "tier": "tier_3_media_verified",
+      "verification_status": "pending_url",
+      "accessed_date": "2026-05-19"
+    },
+    {
+      "source_id": "tier3-laodong-sap-nhap-2025",
+      "url": "SOURCE_REQUIRED: URL Báo Lao Động 2025-04-19 về NQ 1658",
+      "name": "Báo Lao Động 2025-04-19 — Sáp nhập hành chính NQ 1658",
+      "tier": "tier_3_media_verified",
+      "verification_status": "pending_url",
+      "accessed_date": "2026-05-19"
+    }
+  ],
+  "fact_ledger_template_claim": {
+    "_doc": "Đây là TEMPLATE cho một claim trong articles.sources field. Xem 15 §1.2",
+    "claims": [
+      {
+        "claim_text": "Vành Đai 4 dự kiến hoàn thành năm 2027",
+        "source_id": "tier3-vnexpress-vanhdai4",
+        "source_tier": "tier_3_media_verified",
+        "accessed_date": "2026-05-18",
+        "verified_by_uid": "admin_uid_hash_8chars"
+      }
+    ]
+  }
+}

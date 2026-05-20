@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "schema_ref": "docs/spec/05-database-schema.md",
+    "is_demo": true,
+    "to_replace_in_production": "Tier 1 progress data từ CĐT + Tier 3 báo chí cited"
+  },
+  "milestones": [
+    {
+      "milestone_id": "01HZK0MS001",
+      "title": "Khởi công hạ tầng kỹ thuật phân khu Hồng Phát",
+      "date": "2025-03-15",
+      "phan_khu": "hong_phat",
+      "tier": "tier_1_official_verified",
+      "source_url": "https://honghacphumyhung.vn/hongphat/",
+      "media_id": null,
+      "is_demo": true
+    },
+    {
+      "milestone_id": "01HZK0MS002",
+      "title": "Hoàn thành san lấp mặt bằng phase 1",
+      "date": "2025-08-30",
+      "phan_khu": "hong_phat",
+      "tier": "tier_1_official_verified",
+      "source_url": "https://honghacphumyhung.vn/",
+      "media_id": null,
+      "is_demo": true
+    },
+    {
+      "milestone_id": "01HZK0MS003",
+      "title": "Khởi công đường nội khu phase 1",
+      "date": "2026-02-10",
+      "phan_khu": "hong_phat",
+      "tier": "tier_1_official_verified",
+      "source_url": "https://honghacphumyhung.vn/",
+      "media_id": null,
+      "is_demo": true
+    },
+    {
+      "milestone_id": "01HZK0MS004",
+      "title": "Cập nhật tiến độ Vành đai 4 đoạn Thuận Thành",
+      "date": "2026-04-05",
+      "phan_khu": null,
+      "tier": "tier_3_media_verified",
+      "verification_status": "pending_url",
+      "source_url": "SOURCE_REQUIRED: replace with real Tier 3 article URL",
+      "source_id_ref": "tier3-vnexpress-vanhdai4",
+      "media_id": null,
+      "is_demo": true
+    },
+    {
+      "milestone_id": "01HZK0MS005",
+      "title": "Dự kiến bàn giao nhà — Hồng Phát Zone F1-1",
+      "date": "2027-06-10",
+      "phan_khu": "hong_phat",
+      "tier": "tier_1_official_verified",
+      "verification_status": "internal_doc_verified",
+      "source_url": "data/seeds/sales-policy-internal.demo.json",
+      "source_internal": "CSBH F1-1 GĐ 3 nội bộ — handover_target field",
+      "public_safe_label": "Dự kiến 06/2027 — chi tiết liên hệ chuyên viên",
+      "media_id": null,
+      "is_demo": true,
+      "note": "Tier 1 fact từ document CĐT nội bộ. Khi public trên /tien-do, dùng public_safe_label thay vì ngày cụ thể cho đến khi CĐT thông báo official."
+    }
+  ]
+}
