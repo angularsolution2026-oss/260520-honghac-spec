@@ -1,4 +1,4 @@
-﻿# 07 — UI/UX & Design System (Hồng Hạc City)
+# 07 — UI/UX & Design System (Hồng Hạc City)
 
 **Version:** 3.0 | **Last updated:** 2026-05-16 | **Status:** Approved
 

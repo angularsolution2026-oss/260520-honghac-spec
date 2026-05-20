@@ -1,4 +1,4 @@
-﻿# CONTEXT_BUDGET — Moved (GOV-005)
+# CONTEXT_BUDGET — Moved (GOV-005)
 
 **Canonical path:** [.ai/onboarding/CONTEXT_BUDGET.md](.ai/onboarding/CONTEXT_BUDGET.md)
 

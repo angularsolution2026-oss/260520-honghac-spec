@@ -1,4 +1,4 @@
-﻿# PRE-CODE CHECKLIST — Sign-off trước khi approve CP-0
+# PRE-CODE CHECKLIST — Sign-off trước khi approve CP-0
 
 **Mục đích:** Đảm bảo 7 critical gap đã được vá trước khi gạt công tắc scaffold Next.js.
 **Authority:** [AUDIT-160](AUDIT-160.md) · [16](spec/16-scoring-quality-gate.md) · [17](spec/17-launch-data-readiness.md) · [FINAL-LAUNCH-PACK](FINAL-LAUNCH-PACK.md)

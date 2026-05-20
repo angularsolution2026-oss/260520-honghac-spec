@@ -1,4 +1,4 @@
-﻿# 00 — MASTER INSTRUCTION (Hồng Hạc City)
+# 00 — MASTER INSTRUCTION (Hồng Hạc City)
 
 **Version:** 3.0 | **Last updated:** 2026-05-16 | **Status:** LOCKED — Final Architecture v3
 **Authority:** Đây là file LUẬT CAO NHẤT. Mọi conflict → file này thắng.

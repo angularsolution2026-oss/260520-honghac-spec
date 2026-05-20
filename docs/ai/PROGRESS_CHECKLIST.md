@@ -1,4 +1,4 @@
-﻿# PROGRESS_CHECKLIST — Moved (GOV-005)
+# PROGRESS_CHECKLIST — Moved (GOV-005)
 
 **Canonical path:** [.ai/planning/PROGRESS_CHECKLIST.md](.ai/planning/PROGRESS_CHECKLIST.md)
 

@@ -1,4 +1,4 @@
-﻿# PHASE_PLAN — Moved (GOV-005)
+# PHASE_PLAN — Moved (GOV-005)
 
 **Canonical path:** [.ai/planning/PHASE_PLAN.md](.ai/planning/PHASE_PLAN.md)
 

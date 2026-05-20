@@ -1,4 +1,4 @@
-﻿# Consistency Audit — GOV-005
+# Consistency Audit — GOV-005
 
 **Date:** 2026-05-16 | **Scope:** `.ai/**`, `docs/ai/**`, cross-check `docs/spec/**`  
 **Method:** Full file inventory + grep for workflow terms, versions, paths

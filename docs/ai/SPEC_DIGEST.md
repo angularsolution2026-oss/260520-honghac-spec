@@ -1,4 +1,4 @@
-﻿# SPEC_DIGEST — Moved (GOV-005)
+# SPEC_DIGEST — Moved (GOV-005)
 
 **Canonical path:** [.ai/planning/SPEC_DIGEST.md](.ai/planning/SPEC_DIGEST.md)
 

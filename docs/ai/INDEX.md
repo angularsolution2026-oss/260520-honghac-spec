@@ -1,4 +1,4 @@
-﻿# docs/ai â€” Index (post GOV-005)
+# docs/ai â€” Index (post GOV-005)
 
 **Canonical governance root:** [`.ai/`](../.ai/README.md)
 

@@ -1,4 +1,4 @@
-﻿# G1 — Homepage Copy v1
+# G1 — Homepage Copy v1
 
 **Status:** Draft ready for review — dữ liệu thật vẫn được gắn `SOURCE_REQUIRED` / `ASSET_REQUIRED`
 **Authority:** [00 §5.3, §8, §11](../spec/00-master-instruction.md) · [06 §2](../spec/06-app-router-structure.md) · [website-structure §3](../spec/website-structure.md) · [07 §2](../spec/07-ui-ux-design-system.md)

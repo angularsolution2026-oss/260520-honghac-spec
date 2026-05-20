@@ -1,4 +1,4 @@
-﻿# HỒNG HẠC CITY — Website Structure / IA Lock
+# HỒNG HẠC CITY — Website Structure / IA Lock
 
 > Platform domain: `https://bacninhhonghaccity.vn` (env: `NEXT_PUBLIC_SITE_URL`)
 > Official CĐT site (khác): `honghacphumyhung.vn`

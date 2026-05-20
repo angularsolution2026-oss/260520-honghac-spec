@@ -1,4 +1,4 @@
-﻿# 06 — App Router Structure & Project Organization (Hồng Hạc City)
+# 06 — App Router Structure & Project Organization (Hồng Hạc City)
 
 **Version:** 3.0 | **Last updated:** 2026-05-16 | **Status:** Approved
 

@@ -1,4 +1,4 @@
-﻿# Hồng Hạc City — Handoff nhanh
+# Hồng Hạc City — Handoff nhanh
 
 **Cập nhật:** 2026-05-18  
 **Dành cho:** Bạn (human) hoặc Cursor session mới  

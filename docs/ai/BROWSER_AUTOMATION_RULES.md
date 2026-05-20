@@ -1,4 +1,4 @@
-﻿# BROWSER_AUTOMATION_RULES — Moved (GOV-005)
+# BROWSER_AUTOMATION_RULES — Moved (GOV-005)
 
 **Canonical path:** [.ai/runtime/BROWSER_AUTOMATION_RULES.md](.ai/runtime/BROWSER_AUTOMATION_RULES.md)
 

@@ -1,4 +1,4 @@
-﻿# GAP_REGISTER — Moved (GOV-005)
+# GAP_REGISTER — Moved (GOV-005)
 
 **Canonical path:** [.ai/planning/GAP_REGISTER.md](.ai/planning/GAP_REGISTER.md)
 

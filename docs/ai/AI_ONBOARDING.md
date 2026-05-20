@@ -1,4 +1,4 @@
-﻿# AI_ONBOARDING — Moved (GOV-005)
+# AI_ONBOARDING — Moved (GOV-005)
 
 **Canonical path:** [.ai/onboarding/AI_ONBOARDING.md](.ai/onboarding/AI_ONBOARDING.md)
 

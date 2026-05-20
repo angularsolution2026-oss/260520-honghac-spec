@@ -1,4 +1,4 @@
-﻿# DECISION_LOG — Moved (GOV-005)
+# DECISION_LOG — Moved (GOV-005)
 
 **Canonical path:** [.ai/planning/DECISION_LOG.md](.ai/planning/DECISION_LOG.md)
 

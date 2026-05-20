@@ -1,4 +1,4 @@
-﻿# G3 — Homepage Wireframe (ASCII v1)
+# G3 — Homepage Wireframe (ASCII v1)
 
 **Status:** Draft v1 — replace bằng Figma sau khi designer được hire
 **Authority:** [06 §2](../../spec/06-app-router-structure.md) · [website-structure §3](../../spec/website-structure.md) · [G1 homepage copy](../../copy/homepage-copy.md)

@@ -1,4 +1,4 @@
-﻿# KNOWN_FAILURE_PATTERNS — Moved (GOV-005)
+# KNOWN_FAILURE_PATTERNS — Moved (GOV-005)
 
 **Canonical path:** [.ai/governance/KNOWN_FAILURE_PATTERNS.md](.ai/governance/KNOWN_FAILURE_PATTERNS.md)
 

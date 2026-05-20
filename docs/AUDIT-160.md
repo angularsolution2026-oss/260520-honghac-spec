@@ -1,4 +1,4 @@
-﻿# AUDIT 160 — Pre-Code Readiness Check
+# AUDIT 160 — Pre-Code Readiness Check
 
 **Ngày audit:** 2026-05-18
 **Phạm vi:** 19 file [docs/spec/](spec/) + governance `.ai/` hiện có

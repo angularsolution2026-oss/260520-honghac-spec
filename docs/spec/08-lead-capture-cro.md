@@ -1,4 +1,4 @@
-﻿# 08 — Lead Capture & CRO (Hồng Hạc City)
+# 08 — Lead Capture & CRO (Hồng Hạc City)
 
 **Version:** 3.0 | **Last updated:** 2026-05-16 | **Status:** Approved
 
